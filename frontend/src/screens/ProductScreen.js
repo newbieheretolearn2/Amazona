@@ -13,6 +13,9 @@ import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 import { getError } from "../utils";
 import { Store } from "../Store";
+//import '/frontend/src/index.css'
+
+
 
 
 const reducer = (state,action ) => {
@@ -33,9 +36,13 @@ const reducer = (state,action ) => {
     }
 }
 
+  
 
 
 function ProductScreen(){
+
+
+
     const navigate = useNavigate();
 const params = useParams();
 
@@ -158,7 +165,7 @@ return loading ? (
                 {product.countInStock > 0 && (
                   <ListGroup.Item>
                     <div className="d-grid">
-                      <Button onClick={addToCartHandler} variant="primary">Add to Cart</Button>
+                      <Button className="stupidbutton" style={{ backgroundColor: '#ffc000', color: 'black' }} onClick={addToCartHandler}>Add to Cart</Button>
                     </div>
                   </ListGroup.Item>
                 )}

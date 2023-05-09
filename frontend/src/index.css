@@ -16,17 +16,7 @@ main {
   flex :1;
 }
 
-/*
-.btn-primary,
-.btn-outline-primary {
 
-  background-color: #f0c040;
-  color: #000000;
-}*/
-.button.btn.btn-primary{
-  background-color: #f0c040;
-  color: #000000;
-}
 
 .products {
   display : flex;
@@ -111,6 +101,11 @@ main {
     font-weight: bold;
   }
 
-  .btn-primary{
-    background-color: #404040;
+
+  .stupidbutton {
+    background-color: #f0c040;
+    color: black;
+    /* Add any other desired styles */
   }
+
+

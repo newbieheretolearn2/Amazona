@@ -37,7 +37,7 @@ function Product(props) {
       <Link to={`/product/${product.slug}`}>
         <img src={product.image} className="card-img-top" alt={product.name} />
       </Link>
-      <Card.Body>
+      <Card.Body >
         <Link to={`/product/${product.slug}`}>
           <Card.Title>{product.name}</Card.Title>
         </Link>
@@ -45,7 +45,7 @@ function Product(props) {
 
         <Card.Text>${product.price}</Card.Text>
         {product.countInStock === 0 ? <Button variant='light' disabled>Out of stock</Button> :
-          <Button color="#f0c040" onClick={() => addToCartHandler(product)}>Add to cart</Button>
+          <Button style={{ backgroundColor: '#ffc000', color: 'black' }} onClick={() => addToCartHandler(product)}>Add to cart</Button>
         }
 
       </Card.Body>
